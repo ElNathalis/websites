@@ -1,0 +1,135 @@
+body {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    display: flex;
+}
+#custom {
+    border: 5px solid grey;
+    background-color: linen;
+    float: left;
+    width: 2200px;
+    height: 40vw;
+    box-sizing: border-box;
+    color: dimgray;
+    margin: 4px 10px 2px 0px;
+    padding-right: 0;
+    font-size: 16px;
+    padding-left: 5px;
+   
+}
+#text {
+    margin-left: 20px;
+    width: 5000px;
+    
+}
+img {
+    float: right;
+}
+h2 {
+    text-align: center;
+    width: 90%;
+}
+#close img{
+    width: 100%;
+    height: 100%;
+    
+}
+#close {
+    display: inline-block;
+    width:8%;
+    height: 8%;
+    float: right;
+    margin-right: 0;
+    padding: 0;
+}
+#zag {
+    display: flex;
+    margin: 0;
+    line-height: 4px;
+}
+#top {
+    display: flex;
+}
+#align {
+    float: left;
+    width: 70%
+}
+h4 {margin: 0;}
+#clr {
+    display: flex;
+    width: 60%;
+    height: 8%;
+    border: 2px solid grey;   
+}
+#green {
+    float: left;
+    width: 33%;
+    background-color: darkolivegreen;
+}
+#blue {
+    float: left;
+    width: 34%;
+    background-color: lightsteelblue;
+}
+#pink {
+    width: 33%;
+    background-color: lightpink;
+}
+#textcust {
+    line-height: 3px;
+}
+#pic {
+    display: flex;
+    width: 80%;
+    height: 8%;
+    border: 3px solid grey;
+    justify-content: space-around;
+    align-items: center;
+}
+#curied, #einsteind, #kingd, #saharovd, #sholohovd {
+    float: left;
+    width: 19%;
+    height: 95%;
+}
+#curie, #einstein, #king, #saharov, #sholohov {
+    width: 99%;
+    height: 99%;
+}
+#pct img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#last {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+#visota {
+    float: left;
+    width: 40%;
+}
+#vi {
+    display: inline-block;
+    width: 40%;
+}
+#showFormButton {
+    width: 50%;
+    height: 70%;
+    margin-right: 10%;
+}
+#v {padding-bottom: 0; margin-bottom: 0;}
+
+#formContainer { /* Всплывающее окно */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирование по горизонтали и вертикали */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+#inlinetext {display: inline;}
