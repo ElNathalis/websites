@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+    <title>Лаба 10</title>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="counter" id="links-counter">0 ссылок</div>
+            <button id="clear-all-btn" type="button">Очистить все</button>
+        </div>
+        
+        <div class="header">
+            <h2>Список полезных ссылок</h2>
+        </div>
+
+        <div id="appendlink">
+            <input type="text" id="title-input" placeholder="Название">
+            <input type="url" id="url-input" placeholder="URL">
+            <input type="text" id="desc-input" placeholder="Описание">
+            <button id="add-btn" type="button">Сохранить</button>
+        </div>
+
+        <div class="links-container" id="links-container">
+            <!-- Ссылки будут добавляться сюда -->
+        </div>
+    </div>
+</body>
+</html>
