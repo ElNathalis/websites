@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script> 
+    <title>Лаба 11</title>
+    <!--<meta charset="UTF-8"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>WORDLY</h1>
+        <p>Осталось попыток: <span id="remainingAttempts">6</span></p>
+
+        <!-- Панель управления -->
+        <div class="controls">
+            <input type="text" id="guessInput" maxlength="6" placeholder="Введите слово">
+            <button id="provbtn" onclick="checkGuess()">Проверить</button>
+        </div>
+
+        <!-- Игровое поле с попытками -->
+        <div id="board">
+            <!--   <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div> -->
+        </div>
+
+
+        <!-- Панель управления -->
+        <div class="controls">
+            <button id="clearJournal">Сброс игры</button>
+            <button id="themeToggle">Смена темы</button>
+            <button onclick="initGame()">Новая игра</button>
+        </div>
+    </div>
+
+
+    <!-- Выбор длины слова -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <button type="button" id="close" onclick="chclose()"><img src="close_img.png"></button>
+            <h3>Выберите длину слова</h3>
+            <div class="length-options">
+                <label><input type="radio" name="length" value="4">4 </label>
+                <label><input type="radio" name="length" value="5" checked>5 </label>
+                <label><input type="radio" name="length" value="6">6 </label>
+            </div>
+            <button onclick="startNewGame()">Начать игру</button>
+        </div>
+    </div>
+
+    <!-- допустимые слова -->
+    <div class="word-list-container">
+        <h2 class="hid">Допустимые слова</h2>
+        <div id="wordList" class="'hid'"></div>
+        <h2>Журнал игр</h2>
+        <div id="gameJournal"></div>
+    </div>
+
+    <!-- победная гифка -->
+    <div id="winGif" class="hidden">
+        <img src="cat.gif" alt="Победа!">
+    </div>
+</body>
+</html>
