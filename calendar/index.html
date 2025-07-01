@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+    <title>Лаба 9</title>
+</head>
+<body>
+    <form class="container">
+        <h1>Калькулятор дат</h1>
+        
+            <label for="hireDate">Дата приема на работу:</label>
+            <input type="date" id="hireDate" required>
+        
+            <label for="vacationStart">Дата начала отпуска:</label>
+            <input type="date" id="vacationStart">
+        
+            <label for="vacationDays">Количество дней отпуска:</label>
+            <input type="number" id="vacationDays">
+        
+            <label for="lastAssessment">Дата последней аттестации:</label>
+            <input type="date" id="lastAssessment">
+        
+        <button id="calculate" onclick="start()" type="button">Рассчитать</button>
+        <div id="results" class="results">
+            <p>Стаж работы: <span id="workExperience">не задано</span></p>
+            <p>Дата окончания отпуска: <span id="vacationEnd">не задано</span></p>
+            <p>Дата следующей аттестации: <span id="nextAssessment">не задано</span></p>
+            <p>Ближайший юбилей работы в компании: <span id="anniversary">не задано</span></p>
+        </div>
+    </form>
+</body>
+</html>
